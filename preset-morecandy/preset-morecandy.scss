@@ -128,13 +128,13 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
     }
 }
 .dropdown-item .icon {
-	background-color: #fff;
-	padding: 5px;
-	width: 20px;
-	height: 20px;
+    background-color: #fff;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
 }
 .dropdown-item:hover > .icon {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 
@@ -256,17 +256,17 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 }
 
 .logo img {
-	width: 100%;
-	height: auto;
-	max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 
 }
 #page-header .logo {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .jsenabled .card-block {
-	border-left-width: 34px;
+    border-left-width: 34px;
     border-color: $brand-primary;
     border-style: solid;
     position: relative;
@@ -307,48 +307,48 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 }
 
 .jsenabled .block_adminblock .card-block h3.card-title {
-	background-color: $brand-primary;
-	color: #fff;
-	font: bold 12px Sans-Serif;
-	left: 0;
-	letter-spacing: 2px;
-	line-height: 24px;
-	margin: 0;
-	padding: 10px;
-	/* Abs positioning makes it not take up vert space */
-	position: absolute;
-	text-transform: uppercase;
-	top: 0;
-	width: 100%;
+    background-color: $brand-primary;
+    color: #fff;
+    font: bold 12px Sans-Serif;
+    left: 0;
+    letter-spacing: 2px;
+    line-height: 24px;
+    margin: 0;
+    padding: 10px;
+    /* Abs positioning makes it not take up vert space */
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
 
-	/* Rotate from top left corner (not default) */
-	-webkit-transform-origin: none;
-	   -moz-transform-origin: none;
-		-ms-transform-origin: none;
-		 -o-transform-origin: none;
-			transform-origin: none;
+    /* Rotate from top left corner (not default) */
+    -webkit-transform-origin: none;
+       -moz-transform-origin: none;
+        -ms-transform-origin: none;
+         -o-transform-origin: none;
+            transform-origin: none;
 
-	-webkit-transform: rotate(0);
-	   -moz-transform: rotate(0);
-		-ms-transform: rotate(0);
-		 -o-transform: rotate(0);
-			transform: rotate(0);
+    -webkit-transform: rotate(0);
+       -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+         -o-transform: rotate(0);
+            transform: rotate(0);
 }
 
 .jsenabled .block_adminblock .card-block select.custom-select {
-	margin: 50px 10px 0;
-	padding: 3px 5px;
-	display: block!important;
-	width: auto;
+    margin: 50px 10px 0;
+    padding: 3px 5px;
+    display: block!important;
+    width: auto;
 }
 
 .jsenabled .block_adminblock .card-block .card-text {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .jsenabled .block_adminblock .card-block {
-	border-width: $border-width;
+    border-width: $border-width;
 }
 
 /* Block min-height
@@ -435,10 +435,10 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #fff;
-		padding-top: 3px;
-		padding-right: 0;
-		padding-bottom: 0;
-		padding-left: 15px;
+        padding-top: 3px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 15px;
         line-height: 24px;
         /* Abs positioning makes it not take up vert space */
         position: absolute;
@@ -498,17 +498,17 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 
 .editing {
     .card-block {
-		.block-controls {
-			background-color: #eee;
-			border-color: $brand-primary;
-			border-style: dashed;
-			border-width: 1px 0;
-			width: auto;
-			margin: 0 15px;
-			text-align: center;
-			float: none!important;
-		}
-	}
+        .block-controls {
+            background-color: #eee;
+            border-color: $brand-primary;
+            border-style: dashed;
+            border-width: 1px 0;
+            width: auto;
+            margin: 0 15px;
+            text-align: center;
+            float: none!important;
+        }
+    }
 }
 
 .dropdown-toggle::after {
@@ -524,5 +524,5 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 }
 
 #region-main h2 {
-	border: 0 none;
+    border: 0 none;
 }
