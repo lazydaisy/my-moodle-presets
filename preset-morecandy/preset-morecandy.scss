@@ -1,34 +1,34 @@
-/* stylelint-disable color-hex-length */
 /**
  * Moodlecandy preset file for Moodle 3.2
- * Created on the 7th October 2016 by Mary L.Evans (LazyDaisy {@link:http://bylazydaisy.co.uk}
- * Modifed from the preset-default.scss file in Moodle 3.2 Development.
- * Use this space to customise variables, create mixins and override SCSS.
+ * Created on the 7th October 2016 byLazyDaisy {@link:http://vle.bylazydaisy.co.uk}
+ * Modifed from the preset-default.scss file in Moodle 3.2 Boost theme.
  */
 
-// Colors
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+/* stylelint-disable color-hex-length */
 
-$brand-primary:             #C3CC2E !default;
-$brand-success:             #77b300 !default;
-$brand-info:                #9954bb !default;
-$brand-warning:             #ff8800 !default;
-$brand-danger:              #ff4136 !default;
-$brand-inverse:             $gray-dark !default;
+// Colors
+$gray-dark:         #373a3c !default;
+$gray:              #55595c !default;
+$gray-light:        #818a91 !default;
+$gray-lighter:      #eceeef !default;
+$gray-lightest:     #f7f7f9 !default;
+
+$brand-primary:     #c3cc2e !default;
+$brand-success:     #77b300 !default;
+$brand-info:        #9954bb !default;
+$brand-warning:     #ff8800 !default;
+$brand-danger:      #ff4136 !default;
+$brand-inverse:     $gray-dark !default;
 
 // Spacing
-$spacer:   1rem !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
-$border-width: 1px !default;
+$spacer:            1rem !default;
+$spacer-x:          $spacer !default;
+$spacer-y:          $spacer !default;
+$border-width:      1px !default;
 
 // Body
-$body-bg:    #f4f4f4 !default;
-$body-color: #3a3a3a !default;
+$body-bg:           #f4f4f4 !default;
+$body-color:        #3a3a3a !default;
 
 // Typography
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif !default;
@@ -165,13 +165,20 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
     border: $border-width solid $card-border-color;
     margin-top: $spacer;
     margin-bottom: $spacer;
+    .action-menu {
+        .menubar {
+            .dropdown {
+                float: right;
+            }
+        }
+    }
 }
 
 #region-main {
     background-color: #fff;
     border: $border-width solid $card-border-color;
-    padding-top: $spacer;
-    padding-bottom: $spacer;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #page-footer {
@@ -273,6 +280,7 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 }
 
 .jsenabled .card-block h3.card-title,
+.jsenabled .card-block .settingsform h2,
 #frontpage-course-list h2 {
     /* Border is the new background */
     background: none;
@@ -353,11 +361,11 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 
 /* Block min-height
 -------------------------*/
-.jsenabled .block_messages .card-block,
-.jsenabled .block_site_main_menu .card-block,
 .jsenabled .block_tags .card-block {
     min-height: 100px;
 }
+.jsenabled .block_messages .card-block,
+.jsenabled .block_site_main_menu .card-block,
 .jsenabled .block_adminblock .card-block,
 .jsenabled .block_blog_recent .card-block {
     min-height: 120px;
@@ -379,7 +387,6 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 .jsenabled .block_community .card-block,
 .jsenabled .block_course_badges .card-block,
 .jsenabled .block_course_list .card-block,
-.jsenabled .block_course_overview .card-block,
 .jsenabled .block_feedback .card-block,
 .jsenabled .block_flickr .card-block,
 .jsenabled .block_heritage .card-block,
@@ -402,6 +409,7 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 .jsenabled .block_activity_results .card-block,
 .jsenabled .block_admin_bookmarks .card-block,
 .jsenabled .block_calendar_month .card-block,
+.jsenabled .block_course_overview .card-block,
 .jsenabled .block_glossary_random .card-block,
 .jsenabled .block_online_users .card-block,
 .jsenabled .block_participants .card-block,
@@ -414,6 +422,7 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
     min-height: 165px;
 }
 
+.jsenabled .block_admin_bookmarks .card-block,
 .jsenabled .block_completionstatus .card-block,
 .jsenabled .block_selfcompletion .card-block {
     min-height: 175px;
@@ -525,4 +534,61 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 
 #region-main h2 {
     border: 0 none;
+}
+
+/* Flight of Fancy
+-------------------------*/
+body {
+    background: 0 none;
+    background-image: url(http://vle.bylazydaisy.co.uk/pluginfile.php/1/core_admin/logo/0x150/1481113891/wallpaper.jpg);
+    background-size: cover;
+}
+
+#page-header,
+#nav-drawer,
+.pagelayout-login .card,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.open .nav-link,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-item.open .nav-link:focus,
+.nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-item.open .nav-link:hover {
+    background-color: rgba($brand-primary, 0.5);
+}
+
+.pagelayout-login .card-img-top {
+    display: none;
+}
+
+#region-main {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#region-main,
+#page-header {
+    .card {
+        margin-bottom: 0;
+    }
+}
+
+#region-main-box {
+    background-color: rgba($brand-primary, 0.5);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#page-header .logo img {
+    height: 100%;
+    max-height: 200px;
+    max-width: 100%;
+    width: 100%;
+}
+
+#page-header .logo {
+    margin: 0;
+}
+
+#region-main-box {
+    border: 1px solid rgba(238, 238, 238, 1);
 }
