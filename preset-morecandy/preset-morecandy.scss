@@ -193,10 +193,17 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
  */
 .pagelayout-login {
     &.notloggedin {
+        #region-main-box {
+            border: 0 none;
+            background: 0 none;
+        }
         #region-main {
             background-color: transparent;
             border: 0;
             padding: 0;
+            .card-title {
+                display: none;
+            }
         }
         .login-wrapper {
             background-color: #fff;
