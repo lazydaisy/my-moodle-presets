@@ -103,8 +103,8 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
         }
         .nav-link {
             font-size: $font-size-sm;
-            text-transform: uppercase;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
     }
 }
@@ -129,9 +129,9 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 }
 .dropdown-item .icon {
     background-color: #fff;
+    height: 20px;
     padding: 5px;
     width: 20px;
-    height: 20px;
 }
 .dropdown-item:hover > .icon {
     border-radius: 50%;
@@ -177,15 +177,15 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 #region-main {
     background-color: #fff;
     border: $border-width solid $card-border-color;
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 #page-footer {
-    color: #fff;
-    text-align: right;
     background-color: #333;
     border-top: none;
+    color: #fff;
+    text-align: right;
 }
 
 /**
@@ -194,8 +194,8 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 .pagelayout-login {
     &.notloggedin {
         #region-main-box {
-            border: 0 none;
             background: 0 none;
+            border: 0 none;
         }
         #region-main {
             background-color: transparent;
@@ -231,9 +231,9 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
  */
 .block-region .card-block {
     .card-title {
-        padding-bottom: ($spacer/2);
         font-size: 1.143rem;
         font-weight: 600;
+        padding-bottom: ($spacer/2);
         text-transform: uppercase;
     }
 }
@@ -253,8 +253,8 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
  */
 #region-main h2 {
     border-bottom: 0 none;
-    padding-bottom: $spacer;
     margin-bottom: $spacer;
+    padding-bottom: $spacer;
 }
 
 /**
@@ -270,18 +270,18 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 }
 
 .logo img {
-    width: 100%;
     height: auto;
     max-width: 100%;
-
+    width: 100%;
 }
+
 #page-header .logo {
     margin-top: 0;
 }
 
 .jsenabled .card-block {
-    border-left-width: 34px;
     border-color: $brand-primary;
+    border-left-width: 34px;
     border-style: solid;
     position: relative;
 }
@@ -299,13 +299,13 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
     letter-spacing: 2px;
     line-height: 24px;
     /* Abs positioning makes it not take up vert space */
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 3px;
     position: absolute;
     text-transform: uppercase;
     top: 0;
-    padding-top: 3px;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 15px;
 
     /* Rotate from top left corner (not default) */
     -webkit-transform-origin: 0 0;
@@ -389,7 +389,6 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 .jsenabled .block_blog_menu .card-block,
 .jsenabled .block_blog_tags .card-block,
 .jsenabled .block_book_toc .card-block,
-.jsenabled .block_calendar_upcoming .card-block,
 .jsenabled .block_comments .card-block,
 .jsenabled .block_community .card-block,
 .jsenabled .block_course_badges .card-block,
@@ -411,7 +410,6 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 .jsenabled .block_youtube .card-block {
     min-height: 160px;
 }
-
 .jsenabled .block_activity_modules .card-block,
 .jsenabled .block_activity_results .card-block,
 .jsenabled .block_admin_bookmarks .card-block,
@@ -428,7 +426,9 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 .jsenabled .block_twitter_search .card-block {
     min-height: 165px;
 }
-
+.jsenabled .block_calendar_upcoming .card-block {
+    min-height: 170px;
+}
 .jsenabled .block_admin_bookmarks .card-block,
 .jsenabled .block_completionstatus .card-block,
 .jsenabled .block_selfcompletion .card-block {
@@ -547,10 +547,9 @@ $breadcrumb-divider-rtl:         $breadcrumb-divider;
 -------------------------*/
 body {
     background: 0 none;
-    background-image: url(http://vle.bylazydaisy.co.uk/pluginfile.php/1/core_admin/logo/0x150/1481113891/wallpaper.jpg);
-    background-size: cover;
 }
 
+#region-main-box,
 #page-header,
 #nav-drawer,
 .pagelayout-login .card,
@@ -561,6 +560,16 @@ body {
 .nav-tabs .nav-link.active:hover,
 .nav-tabs .nav-item.open .nav-link:hover {
     background-color: rgba($brand-primary, 0.5);
+}
+
+#region-main-box {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#region-main-box,
+.pagelayout-mydashboard #region-main {
+    border: 1px solid $card-border-color;
 }
 
 .pagelayout-login .card-img-top {
@@ -579,12 +588,6 @@ body {
     }
 }
 
-#region-main-box {
-    background-color: rgba($brand-primary, 0.5);
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
 #page-header .logo img {
     height: 100%;
     max-height: 200px;
@@ -594,8 +597,4 @@ body {
 
 #page-header .logo {
     margin: 0;
-}
-
-#region-main-box {
-    border: 1px solid rgba(238, 238, 238, 1);
 }
